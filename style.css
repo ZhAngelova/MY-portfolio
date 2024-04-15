@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Dune Rise', sans-serif;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); 
+  transition: box-shadow 0.3s ease; 
+}
+
+header:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+}
+
+.logo {
+  font-size: 2rem;
+  grid-column: 1 / 6; 
+  margin-left: 20px;
+}
+
+nav {
+  grid-column: 9 / 13; 
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 20px;
+}
+
+nav span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav span a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding-top: 100px; 
+}
+
+
+/* ABOUT ME */
+.container-about-me {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  position: relative;
+  background-image: url('media/meNow.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 1000px; 
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  grid-column: 2 / 7; 
+  
+}
+
+.social-icons {
+  grid-column: 3 / 6; 
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  color: #333;
+  text-decoration: none;
+  font-size: 30px; 
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+
+
+
+/* SKILLS */
+.container-skills {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  padding-top: 20px; 
+  margin-bottom: 40px;
+}
+
+.container-skills h1 {
+  grid-column: 2 / span 10; 
+}
+
+.container-skills p {
+  grid-column: 2 / span 10; 
+}
+
+.skills-icons {
+  grid-column: 2 / span 10; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-icons img {
+  width: 100px; 
+  height: auto; 
+}
+
+
+
+/* PROJECTS */
+.container-projects {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  padding-top: 20px; 
+  /* margin-bottom: 40px;  */
+}
+
+.project-sections {
+  grid-column: 2 / span 10; /* Align project section with the rest of the page */
+}
+
+.project-sections section {
+  flex-basis: calc(33.33% - 20px); 
+  margin-right: 20px; 
+  margin-bottom: 40px;
+  padding: 20px; /* Add padding to create space between content and borders */
+  background-color: #f5f5f5; /* Set background color for differentiation */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth effect */
+}
+
+.container-projects h1 {
+  grid-column: 2 / span 10; 
+}
+
+
+
+/* FOOTER */
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Dune Rise', sans-serif;
+  font-size: 1.2rem;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footer-logo {
+  grid-column: 1 / 5;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.footer-nav {
+  grid-column: 9 / 13;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-nav span {
+  margin-right: 20px;
+}
+
+.footer-nav span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-nav span a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
