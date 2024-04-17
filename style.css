@@ -224,8 +224,8 @@ footer {
 @media (max-width: 767px) {
   main {
     padding-top: 70px; 
-    width: 100%;
-    overflow-x: hidden;
+    /* width: 100%;
+    overflow-x: hidden; */
   }
 
   /* Header */
@@ -249,6 +249,8 @@ footer {
   .container-about-me {
     height: auto; 
     padding: 20px; 
+    width: 100%;
+    
   }
 
   .container-about-me {
@@ -275,6 +277,8 @@ footer {
   .container-skills {
     grid-template-columns: 1fr; 
     padding: 20px; 
+    width: 100%;
+    
   }
 
   .container-skills h1,
@@ -295,6 +299,7 @@ footer {
   }
 
 /* Projects */
+
   .project-iframe {
     grid-column: 1 / -1; 
   }
