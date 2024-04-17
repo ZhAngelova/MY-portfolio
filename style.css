@@ -5,6 +5,11 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+main {
+  padding-top: 100px; 
+}
+
+
 
 
 /* HEADER */
@@ -16,8 +21,8 @@ header {
   color: #fff;
   font-family: 'Dune Rise', sans-serif;
   align-items: center;
-  position: fixed;
   width: 100%;
+  position: fixed;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); 
@@ -30,12 +35,12 @@ header:hover {
 
 .logo {
   font-size: 2rem;
-  grid-column: 1 / 6; 
+  grid-column: 1 / 7; 
   margin-left: 20px;
 }
 
 nav {
-  grid-column: 9 / 13; 
+  grid-column: 8 / 13; 
   display: flex;
   justify-content: space-evenly;
   margin-right: 20px;
@@ -44,14 +49,11 @@ nav {
 nav span a {
   color: #fff;
   text-decoration: none;
+  padding: 5px;
 }
 
 nav span a:hover {
   text-decoration: underline;
-}
-
-main {
-  padding-top: 100px; 
 }
 
 
@@ -67,10 +69,12 @@ main {
   height: 1000px; 
   align-items: center;
   margin-bottom: 20px;
+  overflow: hidden;
+  /* width: 100%; */
 }
 
 .about-content {
-  grid-column: 2 / 7; 
+  grid-column: 2 / 8; 
   font-size: inherit;
   
 }
@@ -105,17 +109,17 @@ main {
 }
 
 .container-skills h1 {
-  grid-column: 2 / span 10; 
+  grid-column: 2 / 12; 
   
 }
 
 .container-skills p {
-  grid-column: 2 / span 10; 
+  grid-column: 2 / 12; 
   font-size: inherit;
 }
 
 .skills-icons {
-  grid-column: 2 / span 10; 
+  grid-column: 2 / 12; 
   display: flex;
   justify-content: space-between;
 }
@@ -134,10 +138,12 @@ main {
   gap: 10px;
   padding-top: 20px; 
   /* margin-bottom: 40px;  */
+  
 }
 
 .project-sections {
-  grid-column: 2 / span 10; 
+  grid-column: 2 / 12; 
+  
 }
 
 .project-sections section {
@@ -151,7 +157,7 @@ main {
 }
 
 .container-projects h1 {
-  grid-column: 2 / span 10; 
+  grid-column: 2 / 4; 
 }
 
 
@@ -164,31 +170,31 @@ footer {
   background-color: #333;
   color: #fff;
   font-family: 'Dune Rise', sans-serif;
-  font-size: 1.2rem;
   align-items: center;
   width: 100%;
   margin-top: 40px;
 }
 
 .footer-logo {
-  grid-column: 1 / 5;
+  font-size: 1.5rem;
+  grid-column: 1 / 7;
   margin-left: 20px;
   color: #fff;
 }
 
 .footer-nav {
-  grid-column: 9 / 13;
+  grid-column: 8 / 13;
   display: flex;
   justify-content: space-evenly;
-}
-
-.footer-nav span {
   margin-right: 20px;
 }
+
 
 .footer-nav span a {
   color: #fff;
   text-decoration: none;
+  padding: 5px;
+  
 }
 
 .footer-nav span a:hover {
@@ -199,13 +205,130 @@ footer {
 
 
 
+/* MEDIA QUERIES */
+
+/* Desktop/Laptop */
+@media (min-width: 1024px) {
+ 
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
 
 
 
+/* Mobile */
+@media (max-width: 767px) {
+  main {
+    padding-top: 70px; 
+  }
+
+  /* Header */
+  header {
+    grid-template-columns: 1fr; 
+    padding: 10px; 
+  }
+
+  .logo {
+    font-size: 1.5rem; 
+    margin-left: 10px; 
+  }
+  
+   nav {
+    display: none; 
+    
+  }
+
+    /* About Me */
+  .container-about-me {
+    height: auto; 
+    padding: 20px; 
+  }
+
+  .about-content {
+    grid-column: 1 / -1; 
+    font-size: 1rem; 
+  }
+
+  .social-icons {
+    grid-column: 1 / -1; 
+    justify-content: center; 
+  }
+
+  .social-icons a {
+    padding: 10px;
+  }
+  
+  /* Skills */
+  .container-skills {
+    grid-template-columns: 1fr; 
+    padding: 20px; 
+  }
+
+  .container-skills h1,
+  .container-skills p {
+    grid-column: 1 / -1; 
+  }
+
+  .skills-icons {
+    grid-column: 1 / -1; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+
+  .skills-icons img {
+    width: 80px; 
+    margin: 10px; 
+  }
+
+/* Projects */
+  .project-iframe {
+    grid-column: 1 / -1; 
+  }
+
+  .project-iframe {
+    display: none; 
+  }
+
+  .project-button {
+    grid-column: 1 / -1; 
+    text-align: center; 
+  }
+
+  .project-button a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
 
 
 
+  /* Footer */
+  footer {
+    grid-template-columns: 1fr; 
+    padding: 10px;
+  }
 
+  .footer-logo {
+    font-size: 1rem; 
+    margin-left: 10px; 
+  }
+
+  .footer-nav {
+    display: none; 
+  }
+
+}
+
+
+  
 
 
 
