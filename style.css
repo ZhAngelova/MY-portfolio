@@ -224,6 +224,8 @@ footer {
 @media (max-width: 767px) {
   main {
     padding-top: 70px; 
+    width: 100%;
+    overflow-x: hidden;
   }
 
   /* Header */
@@ -242,10 +244,17 @@ footer {
     
   }
 
+
     /* About Me */
   .container-about-me {
     height: auto; 
     padding: 20px; 
+  }
+
+  .container-about-me {
+    height: auto;
+    padding: 20px;
+    background-position: left center; 
   }
 
   .about-content {
