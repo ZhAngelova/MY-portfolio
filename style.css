@@ -209,6 +209,9 @@ footer {
 
 /* Desktop/Laptop */
 @media (min-width: 1024px) {
+  .project-button {
+    display: none;
+  }
  
 }
 
