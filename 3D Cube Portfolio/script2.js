@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
 function rotateCube(face) {
     const cube = document.querySelector('.cube');
     switch(face) {
@@ -33,6 +31,7 @@ function rotateCube(face) {
             break;
     }
 }
+
 
 
 
